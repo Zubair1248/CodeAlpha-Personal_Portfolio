@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+        background-color: rgba(215, 212, 212,0.3);
+        display: flex;
+        flex-direction: column;
+    }
+    #nav{
+       
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-wrap: wrap;
+        flex-direction:column;
+        padding: 1vh;
+        border-radius: 2vh;
+        background-color: #f9f9f9;
+
+        
+
+    }
+    #ul{
+        display: flex;
+       align-items: center;
+       width: 100%;
+       max-width: 1200px;
+        padding: 1vh;
+      justify-content: space-around;
+      list-style-type: none;
+      flex-wrap: wrap;
+      gap: 5vh;
+    }
+    #logo{
+        font-size:5vh ;
+        font-family: 'Trebuchet MS' sans-serif;
+    }
+    #ul li{
+        transition: 1s;
+        font-family: Verdana  sans-serif;
+        font-weight: bold;
+        font-size: large;
+        border-radius: 5px;
+       padding-inline: 5px;
+    }
+    #ul li a{
+        text-decoration: none;
+        color: rgb(39, 3, 3);
+       
+    }
+    #ul button{
+        text-align: center;
+        color: white;
+        background-color: green;
+        border: none;
+        border-radius: 1vh;
+        width: 10vh;
+        height: 3vh;
+        cursor: pointer;
+    }
+    #detail
+    {
+       
+        /* border: 2px solid; */
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        overflow: hidden;
+        
+      
+        
+
+    }
+    #pic{
+       
+       margin-top: 2vh;
+    justify-content: center;
+    align-items: center;
+    width: 100vw; 
+    height: 90vh;
+    text-align: center; 
+    
+
+
+    }
+    
+    #pic img
+    {
+
+       
+     width: 70vmin; 
+    height: 70vmin; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    border: 5px solid white; 
+    text-align: center;
+        
+    }
+    #detail span
+    {
+        color: blue;
+        margin: 0;
+        padding: 0;
+    }
+    #detail h2{
+        margin: 0px;
+        text-align: center;
+        justify-content: center;
+
+    }
+    #detail p{
+       
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        word-spacing: 2px;
+        font-family: Arial sans-serif;
+    }
+    #porject_detail{
+       
+        width: 50%;
+        height: auto;
+        box-sizing: border-box;
+        margin: 2vh;
+
+    }
+    #porject_detail button{
+        background-color: green;
+        color: white;
+        width: 20vh;
+        text-align: center;
+        align-items: center;
+        margin: 1vh;
+        border: none;
+        height: 4vh;
+        font-family: verdana sans-serif;
+        font-size: larger;
+        font-weight: bold;
+        border-radius: 2vh;
+        
+    }
+    #list
+    {
+    list-style-type: decimal;
+    font-size: larger;
+    font-weight: bold;
+    margin: 2vh;
+    gap: 5vh;
+    
+
+    }
+    #expertise{
+       
+        margin-top: 2vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        overflow: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        box-shadow: 5px 5px 5px 10px rgba(98, 91, 91, 0.5);
+        text-align: center;
+        
+        
+    }
+    #html{
+       
+        width: 50%;
+        margin: 10vh auto; 
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+        font-size: large;
+        overflow: hidden;
+        border-radius:2vh ;
+    }
+    #html h2{
+        text-align: center;
+    }
+    #css{
+      
+       
+        width: 50%;
+        margin: 10vh auto; 
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+        font-size: large;
+        overflow: hidden;
+        border-radius:2vh ;
+
+        
+
+    }
+    #css h1{
+        text-align: center;
+    }
+    #js{
+       
+       
+        width: 50%;
+        margin: 10vh auto; 
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+        font-size: large;
+        overflow: hidden;
+        border-radius:2vh ;
+
+    }
+    #js h1{
+        text-align: center;
+       
+    }
+    @media(max-width:768px)
+    {
+        #nav{
+            text-align: center;
+            background-color: black;
+            border: 3px solid rgb(77, 114, 131);
+
+
+                }
+        #ul{
+            flex-direction: column;
+            align-items: center;
+           
+            color: white;
+            margin: 0;
+            left: 0;
+
+        }
+       
+        #ul li a{
+            color: white;
+        }
+        #detial{
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            
+
+        }
+     
+        #name span
+        {
+            color: blue;
+        
+        }
+        #name h2{
+            
+        }
+        
+        #pic
+        {
+            max-width: 50vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh; 
+
+
+        }
+        #pic img{
+        /* width: 50%; */
+     width: 50vmin; 
+    height: 50vmin;
+    object-fit: cover;
+    border-radius: 50%;
+
+        }
+        #detail h1{
+            font-size: 4vh;
+        }
+        #detail h2{
+            font-size: 1vh;
+        }
+        #html{
+            font-size: 2vh;
+        }
+        #css{
+            font-size: 2vh;
+        }
+        #js{
+            font-size: 2vh;
+        }
+        #expertise h1
+        {
+            text-align: center;
+        }
+
+    }
+
+    
+</style>
+<body>
+    
+    <nav id="nav">
+        <ul id="ul">
+            <h1 id="logo">Zubair</h1>
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="project">Project</a></li>
+            <li><a href="contact">Contact</a></li>
+            <button>Login</button>
+            <button>Sign Up</button>
+        </ul>
+    </nav>
+
+    <div id="detail">
+        <div id="pic">
+        <img src="./web.jpg" alt="">
+    </div>
+        <div id="name">
+        <h1>Hello I am <span>Zubair</span></h1>
+        <h1>Front end Developer</h1>
+    </div>
+        <p>FHi, I’m Zubair, a passionate Frontend Developer with expertise in building modern, responsive, and user-friendly web applications. I specialize in HTML, CSS, JavaScript, and frameworks like React.js and Tailwind CSS to create seamless and visually stunning user interfaces.
+
+            With a keen eye for design and performance, I focus on:
+           <li> ✅ Responsive Web Design – Ensuring websites look great on all devices.</li>
+           <li> ✅ Optimized User Experience (UX) – Creating smooth and interactive web pages.</li>
+           <li>   ✅ Performance & Accessibility – Writing clean, maintainable, and efficient code.</li>
+        
+
+<div id="porject_detail">
+    <button>Projects</button>
+    <ol id="list">
+    <li>Calculator</li>
+    <li>personal portfolio</li>
+    <li>Image Gallery</li>
+    <li>Todo List</li>
+</ol>
+</div>
+    </div>
+    
+    <div id="expertise">
+        <h1>Expertise</h1>
+       <div id="html">
+      
+        <h2>HTML</h2>
+        <p>HTML (HyperText Markup Language) provides the structure of a webpage, defining elements like headings, paragraphs, images, and links.
+            Structure: Organizes content using elements like, , and .
+                 Forms & Inputs: Enables user interaction with forms using , etc.
+                 SEO-friendly: Proper HTML structure improves search engine visibility.
+                 Media Support: Supports images, videos, and audio with .
+        </p>
+       </div> 
+
+       <div id="css">
+        <h1>CSS</h1>
+        <p>CSS (Cascading Style Sheets) enhances the appearance of the webpage, allowing developers to apply styles such as colors, fonts, layouts, and animations.
+             Styling: Controls colors, fonts, margins, and spacing.
+ Responsive Design: Ensures web pages look great on all screen sizes (mobile, tablet, desktop).
+ Animations & Effects: Adds transitions, hover effects, and keyframe animations.
+ Frameworks: Popular frameworks like Tailwind CSS, Bootstrap simplify styling.
+        </p>
+       </div>
+
+       <div id="js">
+        <h1>Javascript</h1>
+        <p>JavaScript adds interactivity, enabling dynamic content updates, animations, form validations, and user interactions without requiring a page reload.
+             DOM Manipulation: Modifies HTML elements in real-time.
+            Event Handling: Listens to user actions like clicks, hovers, or keystrokes.
+            API Integration: Fetches and displays data from servers (e.g., weather updates).
+             Frameworks & Libraries: React.js, Vue.js, and Angular streamline development.
+        </p>
+       </div>
+
+    </div>
+
+
+    
+
+    
+</body>
+</html>
